@@ -1,13 +1,105 @@
-@tailwind base;
+ /* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 
-.questions {
-    margin-top: 0.5rem;
+ body {
+    background-color: #002f49d1;
+    /* background: rgb(0,181,226);
+    background: linear-gradient(100deg, rgba(0,181,226,1) 36%, rgba(239,51,64,1) 36%, rgba(239,51,64,1) 68%, rgba(80,158,47,1) 68%); */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin-top: 1rem;
+    font-family: cursive
+ }
+
+ button {
+   cursor: pointer;
+ }
+
+ h1 {
+   text-align: center;   
+   color: white;
+   background-color: black;
+   border: 1px solid black;
+   border-radius: 5px;
+   padding: 1rem;
+ }
+
+ .multiple-questions{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
- } 
+    width: 500px;
+    max-width: 50vw;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+   
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+ }
+
+ .move-buttons {
+    min-width: 5rem;
+    height: 2rem;
+    line-height: 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+ }
+
+ .move-buttons:hover {
+    background-color: white;
+    color: black;
+ }
+ p {
+    font-size: 2rem;
+    text-align: center;
+ }
+ .score-number {
+    color: white;
+ }
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+ li {
+    list-style: none;
+    text-decoration: solid;
+    color: black;
+ }
+
+ .error-page, .options {
+   text-align: center;
+   font-size: 1.5rem;
+   padding: 1.5rem;
+ }
+
+ .home-error-link, .main-page-links, .back-page-link {
+   font-size: 1.7rem;
+   border: 1px solid black;
+   padding: 0.2rem;
+   border-radius: 10px;
+   background-color: black;
+ }
+
+ .back-page-link {
+   font-size: 1rem;
+   margin-left: 1rem;
+ }
+
+
+.home-error-link:visited,  .main-page-links:visited,  .back-page-link {
+   color: white;
+ }
+
 
